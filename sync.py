@@ -17,12 +17,13 @@ print("Sending...")
 
 command_send = command_sync+local_dir+remote_user+ remote_dir
 os.system(command_send)
-
-print("Downloading")
+time.sleep(1)
+print("Downloading a")
 
 command_get = command_sync+remote_user+remote_copy_dir+ " "+local_copy_dir
+print(command_get)
 os.system(command_get)
 
-time.sleep(1)
+
 
 print('Transfer Compeleted')
